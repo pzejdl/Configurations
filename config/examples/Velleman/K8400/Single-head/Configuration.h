@@ -905,7 +905,7 @@
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 160, 160, 10, 10000 }
+#define DEFAULT_MAX_FEEDRATE          { 160, 160, 6, 10000 } // K8400: Using 6 for Z. The original value 10 was too high and caused problems with the Z-stepper engine.
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
